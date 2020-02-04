@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(205, 216, 216);
+}
+nav{
+    width: 100%;
+    background: black;
+    overflow: auto;
+}
+ul{
+    margin: 0 0 0 405px;
+    list-style: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 150px;
+}
+nav a{
+    width: 100px;
+    display: block;
+    padding: 30px 15px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #f2f2f2;
+    text-align: center;
+}
+nav a:hover{
+    background: rgb(21, 205, 230);
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+#outerbox{
+    width: 600px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sliderbox{
+    position: relative;
+    width: 2400px;
+    animation-name: FON;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#sliderbox img{
+    float: left;
+}
+
+@keyframes FON{
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+    25%{
+        left: -600px;
+    }
+    45%{
+        left: -600px;
+    }
+    50%{
+        left: -1200px;
+    }
+    70%{
+        left: -1200px;
+    }
+    75%{
+        left: -1800px;
+    }
+    95%{
+        left: -1800px;
+    }
+    100%{
+        left: -2400px;
+    }
+}
+footer{
+    text-align: center;
+}
+#ONama{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 18px;
+    
+}
+p::first-letter{
+    font-size: 50px;
+}
+
+.container{
+    display: flex;
+}
+.cont1{
+    margin-left: 100px;
+}
+.cont3{
+    margin-right: 100px;
+}
+
+@media  (max-width: 1220px){
+    .cont1{
+        display: none;
+    }
+    .cont3{
+        display: none;
+    }
+}
+
+
+
+
+
+
